@@ -1,0 +1,17 @@
+# IDE
+.idea/
+*.iml
+
+# Local test harness
+.testenv/
+.check/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Web app prototype (kept on disk, not tracked on git)
+/index.html
+/src/
+/styles/
+/test/
