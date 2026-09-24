@@ -947,7 +947,7 @@ class SfDropdown extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField<String>(
-      initialValue: value,
+      initialValue: options.any((o) => o.value == value) ? value : null,
       isExpanded: true,
       decoration: InputDecoration(hintText: hint),
       items: [

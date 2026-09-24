@@ -1,5 +1,7 @@
 # StockFlow
 
+**Version 1.0.0** — first release.
+
 Offline-first inventory management for small warehouses, retail teams and field crews.
 
 Native Android app built with Flutter. Data is stored on-device (SharedPreferences),
@@ -20,6 +22,14 @@ so it works without a connection.
 cd mobile
 flutter run
 ```
+
+## Build a release APK (for sharing)
+```bash
+cd mobile
+flutter build apk --release
+```
+APK output: `mobile/build/app/outputs/flutter-apk/app-release.apk`
+(debug-signed, so it installs directly on any Android device.)
 
 ## Structure
 - `mobile/lib/main.dart` — app entry and routing
